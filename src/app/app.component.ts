@@ -75,7 +75,6 @@ private lazyload (threshold: number = 100) {
       
       
       if (top < ( scrollTop+ window.innerHeight + threshold) && top>=  ( scrollTop- window.innerHeight - threshold) ) {
-        console.log(top);
         lazyImage.tagName.toLowerCase() === 'img'
           ? lazyImage.src = src
         : lazyImage.style.backgroundImage = "url(\'" + src + "\')";

@@ -99,6 +99,9 @@
             ],
             "scripts": ["./node_modules/masonry-layout/dist/masonry.pkgd.js"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
