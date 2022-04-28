@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+#holder{
+    margin:auto;
+  }
+  .grid-item {
+    width: 200px;
+      float: left;
+      background: rgb(177, 177, 182);
+      
+    }
+    .grid-item200 {
+      height: 200px;
+    }
+    .grid-item300 {
+      height: 300px;
+    }
+    .grid-item400 {
+     height: 400px;
+    }
+    .grid-item500 {
+     height: 500px
+    }
+    .grid-item img{
+      width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+  
+      .grid-item {
+        width: 150px;
+        }
+        .grid-item200 {
+          height: 150px;
+        }
+        .grid-item300 {
+          height: 225px;
+        }
+        .grid-item400 {
+         height: 300px;
+        }
+        .grid-item500 {
+         height: 375px
+        }
+        
+    }
