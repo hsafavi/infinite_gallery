@@ -14,7 +14,6 @@ import { RandomSize } from './utilities/randomSize';
 })
 export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   ngAfterContentInit(): void {
-    //this.setMargin()
     setTimeout(() => {
       this.msnry.layout();
     }, 50);
@@ -32,8 +31,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
       itemSelector: '.grid-item',
     });
-    console.log(this.msnry);
-
     this.msnry.on('layoutComplete', () => this.setMargin());
   }
 
@@ -52,7 +49,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
     const cols = this.msnry.cols;
     if (cols > 1) {
       if (container) {
-        //container.style.width = (cols * itemWidth)+'px';
         container.style.marginLeft =
           (window.innerWidth - cols * itemWidth) / 2 + 'px';
       }
