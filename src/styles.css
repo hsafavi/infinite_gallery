@@ -5,8 +5,7 @@
   .grid-item {
     width: 200px;
       float: left;
-      background: rgb(177, 177, 182);
-      
+      background: rgb(177, 177, 182) url('assets/images/loading.gif') no-repeat center;
     }
     .grid-item200 {
       height: 200px;
